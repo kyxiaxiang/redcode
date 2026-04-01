@@ -1,5 +1,7 @@
 # redcode
 
+# GG cursor已经暂时关闭了help歇菜了家人们
+
 **The free build of Claude Code. / Claude Code 免费构建版**
 
 All telemetry stripped. All injected security-prompt guardrails removed. All experimental features unlocked. One binary, zero callbacks home.  
