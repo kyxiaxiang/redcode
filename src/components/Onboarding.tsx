@@ -114,12 +114,14 @@ export function Onboarding({
     goToNextStep();
   }
   const steps: OnboardingStep[] = [];
+  /*
   if (oauthEnabled) {
     steps.push({
       id: 'preflight',
       component: preflightStep
     });
   }
+  */
   steps.push({
     id: 'theme',
     component: themeStep
@@ -130,6 +132,8 @@ export function Onboarding({
       component: <ApproveApiKey customApiKeyTruncated={apiKeyNeedingApproval} onDone={handleApiKeyDone} />
     });
   }
+  // OAuth step removed for redcode
+  /*
   if (oauthEnabled) {
     steps.push({
       id: 'oauth',
@@ -138,6 +142,7 @@ export function Onboarding({
         </SkippableStep>
     });
   }
+  */
   steps.push({
     id: 'security',
     component: securityStep
